@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story</title>
+</head>
+<body>
+    <h1>Whats is your story</h1>
+    <div class="products"></div>
+    <script>
+        let http = new XMLHttpRequest();
+        http.open('get', 'products1.json', true);
+        http.send();
+        http.onload = function(){
+        if(this.readyState == 4 && this.status == 200){
+        let products = JSON.parse(this.responseText);
+        let output = "";
+        for(let item of products){
+         output += `
+           
+            <div class="product">
+                <div class="first">
+                    <div class="second"><img src="${item.image}" alt="${item.description}"></div>  
+                    <div class="third"><h1>${item.title}</h1><h2>${item.title2}</h2>
+                    </div>
+            
+                </div>
+            </div>
+         `;
+      }
+      document.querySelector(".products").innerHTML = output;
+   }
+}
+    </script>
+</body>
+</html>
+
+$(document).ready(function())

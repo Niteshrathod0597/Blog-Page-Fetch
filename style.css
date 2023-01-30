@@ -1,0 +1,187 @@
+/* ----------------------Navbar------------------------- */
+* {
+    padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+nav {
+    background: #5434af;
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+    color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+    float: right;
+	margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+    background: #1d075f;
+	transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+        font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+	}
+	ul{
+        position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #1d075f;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+        display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+        font-size: 20px;
+	}
+	a:hover, a.active {
+        background: none;
+		color: #5434af;
+	}
+	#check:checked ~ ul {
+        left: 0;
+	}
+}
+/* ----------------------Navbar------------------------- */
+/* ++++++++++++++++++++++++section++++++++++++++++++++++ */
+
+
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+section div{
+ justify-items: center;
+ text-align: center;
+}
+
+ h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+ }
+
+img{
+    width: 90%;
+}
+
+
+.first{
+    display: flex;
+    float: left;
+    border: 20px solid rgb(62, 14, 111);
+    /* margin: 20px; */
+    /* margin-left: 100px; */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.second{
+    border: 9px solid rgb(20, 233, 169);
+    /* width: 70%; */
+    
+}
+.third{
+    border: 5px solid rgb(245, 15, 15);
+    width: 30%;
+
+}
+.product{
+    text-align: center;
+}
+ 
+/* --------------------------footer------------------------------- */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-yahoo {
+    background: #430297;
+    color: white;
+}
+/* --------------------------footer------------------------------- */
+
+
